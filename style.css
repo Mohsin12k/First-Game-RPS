@@ -22,21 +22,20 @@ html {
     color: red;
 }
 
-.goldText {
+.goldText
+{
     color: gold;
 }
 
 /* General Styles */
 
 body {
-    height: 100vh;
-    background-color: rgba(30, 185, 164, 0.815);
+    min-height: 100vh;
+    background-color:rgba(30, 185, 164, 0.815);
     display: flex;
     flex-direction: column;
-    /* Removed align-items: center for full width */
-    /* gap: 30px; */
-    /* Add padding-bottom equal or greater than footer height */
-    padding-bottom: 12vh;
+    align-items: center;
+    gap: 30px;
 }
 
 /* Header Style */
@@ -45,10 +44,9 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
-    /* height: auto; */
     background-color: aliceblue;
     padding: 1rem 3rem;
-    /* gap: 10px; */
+    gap: 10px;
     display: flex;
     justify-content: center;
     border-bottom: 2px solid #000;
@@ -57,9 +55,8 @@ body {
 
 .Header .Header_h1 {
     width: 100%;
-    /* height: 100%; */
     color: #333;
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -70,20 +67,18 @@ body {
 
 .selectBtn {
     width: 100%;
-    /* height: 30vh; */
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     gap: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
-    /* No need for extra padding-bottom here since body has it */
+    margin: 10px 0 10px;
+    padding-bottom: 12vh;
 }
 
 .selectBtn_buttons {
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     justify-content: space-around;
 }
@@ -108,7 +103,7 @@ body {
 }
 
 .selectBtn_showData div {
-    font-size: 2rem;
+    font-size: 2.5rem;
     gap: 10px;
     padding: 10px;
 }
@@ -128,8 +123,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
-    z-index: 1000; /* Ensure footer stays on top */
 }
 
 .scoreDisplay {
@@ -142,10 +135,14 @@ body {
 
 @keyframes scaleIt {
     0% {
-        transform: scale(0.5);
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(1.2);
     }
 }
