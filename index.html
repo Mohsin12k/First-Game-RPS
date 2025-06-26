@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Again</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    
+    <header class="Header">
+
+        <h1 class="Header_h1">
+            <span>Rock</span>
+            -
+            <span>Paper</span>
+            -
+            <span>Scissor</span>
+                
+        </h1>
+
+    </header>
+
+    <main class="selectBtn">
+
+        <div class="selectBtn_buttons">
+        <button onclick="playGame('rock')">👊</button>
+        <button onclick="playGame('paper')">✋</button>
+        <button onclick="playGame('scissor')">✌</button>
+        </div>
+
+        <div class="selectBtn_showData">
+        <div id="playerDisplay">Player:</div>
+        <div id="computerDisplay">Computer:</div>
+        <div id="resultDisplay">Who Wins<span class="redText">?</span></div>
+        </div>
+
+    </main>
+
+    <footer id="Footer">
+
+         <div class="scoreDisplay">
+            Player: <span id="playerScoreDisplay" class="greenText">0</span>
+        </div>
+        <div class="scoreDisplay">
+            Computer: <span id="computerScoreDisplay" class="redText">0</span>
+        </div>
+
+    </footer>
+
+</body>
+</html>
